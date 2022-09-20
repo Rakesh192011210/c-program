@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(void) {
+int m, x=0, y=1, z;
+printf(“Please enter the total number of terms in the program : \n”);
+scanf(“%d”,&m);
+if(m==1){
+printf(“%d”, x);
+} else if(m == 2)
+{ printf(“%d %d”, x, y);
+} else
+{ printf(“%d %d “, x, y);
+for(int p=3; p<=m; p++){
+printf(“%d “, RecursiveTerm(p));
+}
+}
+return 0;
+}
+int RecursiveTerm(int m){
+if(m==1)
+return 0;
+else if(m==2)
+return 1;
+return RecursiveTerm(m-2) + RecursiveTerm(m-1);
+}
