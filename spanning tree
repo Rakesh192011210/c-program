@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
+#define infinity 999
+#define MAX 20
 int G[MAX][MAX],spanning[MAX][MAX],n;
 int prims();
 int main()
